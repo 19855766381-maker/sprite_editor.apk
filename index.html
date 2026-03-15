@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Mobile Sprite Editor</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="topbar">
+
+<input type="file" id="pngFile">
+<input type="file" id="xmlFile">
+
+<button onclick="loadAtlas()">加载Atlas</button>
+
+</div>
+
+
+<div id="spriteList"></div>
+
+<canvas id="stage"></canvas>
+
+<div id="controls">
+
+<button onclick="rotate(-0.1)">↺</button>
+<button onclick="rotate(0.1)">↻</button>
+
+<button onclick="scale(1.1)">＋</button>
+<button onclick="scale(0.9)">－</button>
+
+<button onclick="saveFrame()">保存帧</button>
+<button onclick="nextFrame()">下一帧</button>
+
+<button onclick="play()">播放</button>
+<button onclick="exportBIN()">导出BIN</button>
+
+</div>
+
+<script src="atlas.js"></script>
+<script src="editor.js"></script>
+<script src="ui.js"></script>
+<script src="bin.js"></script>
+
+</body>
+</html>
